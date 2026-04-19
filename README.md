@@ -1,4 +1,4 @@
-# micro-project
+micro-project
 final lab project  
 # Smart Traffic Light System with Adaptive Timing
 

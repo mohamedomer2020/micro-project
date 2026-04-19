@@ -2,18 +2,18 @@
 final lab project  
 # Smart Traffic Light System with Adaptive Timing
 
-## Objective
+# Objective
 
 This project implements a microprocessor-based traffic light system using a PIC microcontroller. The system adapts traffic signal timing based on input conditions.
 
-## Features
+# Features
 
 * Finite State Machine (FSM)
 * Timer and Interrupt Control
 * Adaptive Green Light Timing
 * Button-based Traffic Simulation
 
-## Hardware
+# Hardware
 
 * PIC Microcontroller
 * LEDs (Red, Yellow, Green)

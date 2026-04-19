@@ -1,6 +1,6 @@
 # System Design
 
-## Traffic States
+Traffic States
 
 S0: Road A Green, Road B Red
 S1: Road A Yellow, Road B Red

@@ -1,4 +1,4 @@
-# System Design
+System Design
 
 Traffic States
 
@@ -7,17 +7,17 @@ S1: Road A Yellow, Road B Red
 S2: Road A Red, Road B Green
 S3: Road A Red, Road B Yellow
 
-## Adaptive Timing
+Adaptive Timing
 
-* Default green = 5 seconds
-* If traffic detected → increase to 8 seconds
+ Default green = 5 seconds
+ If traffic detected → increase to 8 seconds
 
-## Inputs
+ Inputs
 
-* Button A → Traffic on Road A
-* Button B → Traffic on Road B
+ Button A → Traffic on Road A
+ Button B → Traffic on Road B
 
-## Outputs
+Outputs
 
-* LEDs for traffic lights
+ LEDs for traffic lights
 

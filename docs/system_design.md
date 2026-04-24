@@ -20,4 +20,19 @@ Adaptive Timing
 Outputs
 
  LEDs for traffic lights
+case S0_A_GREEN:
+if(input(BTN_A))
+delay_ms(1500);
+else
+delay_ms(1000);
+currentState = S1_A_YELLOW;
+break;
+
+case S2_B_GREEN:
+if(input(BTN_B))
+delay_ms(1500);
+else
+delay_ms(1000);
+currentState = S3_B_YELLOW;
+break;
 

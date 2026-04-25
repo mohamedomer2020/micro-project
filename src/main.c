@@ -3,5 +3,11 @@
  Description: Adaptive traffic light using buttons
 #define BTN_A PIN_B0
 #define BTN_B PIN_B1
+int getGreenTime(int buttonPressed) {
+if(buttonPressed)
+return 1600;
+else
+return 1000;
+}
 
 

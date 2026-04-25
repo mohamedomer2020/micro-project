@@ -14,10 +14,6 @@ delay_ms(getGreenTime(input(BTN_A)));
 currentState = S1_A_YELLOW;
 break;
 
-case S2_B_GREEN:
-delay_ms(getGreenTime(input(BTN_B)));
-currentState = S3_B_YELLOW;
-break;
 
 
 

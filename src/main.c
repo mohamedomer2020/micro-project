@@ -18,6 +18,12 @@ case S2_B_GREEN:
 delay_ms(getGreenTime(input(BTN_B)));
 currentState = S3_B_YELLOW;
 break;
+int16 getGreenTime(int buttonPressed) {
+if(buttonPressed)
+return 1600;
+else
+return 1000;
+}
 
 
 

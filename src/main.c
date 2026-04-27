@@ -24,6 +24,8 @@ return 1600;
 else
 return 1000;
 }
+while(TRUE) {
+updateLights(currentState);
 
 
 

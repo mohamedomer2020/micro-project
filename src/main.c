@@ -18,4 +18,9 @@ else
 delay_ms(1000);
 currentState = S3_B_YELLOW;
 break;
-
+int getGreenTime(int buttonPressed) {
+if(buttonPressed)
+return 1600;
+else
+return 1000;
+}

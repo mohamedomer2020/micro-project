@@ -19,20 +19,36 @@ Adaptive Timing
 
 Outputs
 
- LEDs for traffic lights
-case S0_A_GREEN:
-if(input(BTN_A))
-delay_ms(1500);
-else
-delay_ms(1000);
-currentState = S1_A_YELLOW;
-break;
+ Inputs
 
-case S2_B_GREEN:
-if(input(BTN_B))
-delay_ms(1500);
-else
-delay_ms(1000);
-currentState = S3_B_YELLOW;
-break;
+The system uses two push buttons to simulate traffic presence:
+
+RB0 (Button A): Detects traffic on Road A
+RB1 (Button B): Detects traffic on Road B
+
+Both buttons are connected using pull-down resistors:
+
+ Not pressed → logic LOW (0)
+ Pressed → logic HIGH (1)
+
+These inputs are used to adjust the duration of the green light dynamically.
+
+ Outputs
+
+The system controls traffic lights using LEDs connected to PORTD:
+
+ Road A LEDs
+
+ RD0 → Red
+ RD1 → Yellow
+ RD2 → Green
+
+ Road B LEDs
+
+ RD3 → Red
+ RD4 → Yellow
+ RD5 → Green
+
+Each LED represents a traffic signal and is controlled by the microcontroller according to the current state of the system.
+
 

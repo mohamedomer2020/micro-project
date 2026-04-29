@@ -50,3 +50,5 @@ duration = getGreenTime(input(BTN_B));
 delay_ms(duration);
 currentState = S3_B_YELLOW;
 break;
+while(TRUE) {
+updateLights(currentState);

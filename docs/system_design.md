@@ -108,5 +108,63 @@ After applying the fix:
  Adaptive timing responds properly to button inputs
  System transitions are stable and predictable
 
+ ---
+
+## Final System Overview
+
+The Smart Traffic Light System operates using a Finite State Machine (FSM) to control traffic signals for two roads.
+
+The system continuously cycles through four main states:
+
+1. Road A Green
+2. Road A Yellow
+3. Road B Green
+4. Road B Yellow
+
+Each state controls a specific combination of LEDs and transitions to the next state after a defined delay.
+
+---
+
+## Final Behavior
+
+* Only one road has a green signal at a time
+* The opposite road remains red
+* Yellow signals are used as transition states
+
+The system runs continuously in an infinite loop, ensuring real-time traffic control behavior.
+---
+
+## Adaptive Timing Summary
+
+The system adjusts the duration of green lights based on traffic input:
+
+* Button A controls Road A timing
+* Button B controls Road B timing
+
+If a button is pressed:
+
+* The green light duration increases
+
+If no button is pressed:
+
+* The system uses the default timing
+
+This allows the system to simulate real-world traffic conditions where busier roads receive longer green signals.
+---
+
+## System Validation
+
+The system was tested using simulation before final validation.
+
+### Verified Features:
+
+* Correct state transitions (FSM operation)
+* Proper LED behavior for each traffic state
+* Accurate timing after fixing data type issues
+* Button inputs correctly modify green light duration
+
+The system operates reliably and produces consistent results across multiple test runs.
+
+
 
 

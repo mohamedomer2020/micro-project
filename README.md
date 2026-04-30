@@ -19,5 +19,22 @@ This project implements a microprocessor-based traffic light system using a PIC 
 * LEDs (Red, Yellow, Green)
 * Push Buttons
 
+* ## Simulation
+
+The system was tested using Proteus Design Suite.
+
+### Observations:
+
+* Traffic lights switch correctly between states
+* Button inputs successfully modify green light duration
+* FSM transitions are stable without glitches
+
+# Tools Used:
+
+* PIC16F877A microcontroller
+* LEDs for traffic signals
+* Push buttons for traffic simulation
+
+
 MOHAMMED OMER (210202940)
 FARIS FAYEZ (210202876)
